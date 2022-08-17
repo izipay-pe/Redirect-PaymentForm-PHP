@@ -1,15 +1,16 @@
 # Redirect-Form-Izipay in PHP
 
-Visite la documentación para más información
+Visite la documentación para más información:
 https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html
 
 ```sh
 Install XAMPP https://www.apachefriends.org/
 ``` 
 
-Configurar el identificador de su tienda y la clave
+Configurar el identificador de su tienda y la clave:
 https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/identificarse-durante-los-intercambios.html
 ```sh
+./example.configKey.php
 //Identificador de su tienda
 $_SHOP_ID = "XXXXXXXXXXXX"; 
 
