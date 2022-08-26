@@ -23,8 +23,8 @@ Descomprir el proyecto en la carpeta htdos en la ruta de instalación de Xampp: 
 
 ![Xampp control panel](/images/captura2.png)
 
-### Abrir en el navegar: http://localhost/Redirect-Form-PHP-Tismart-main/
-Abrir la siguiente url en su navegador con el puerto 80 que abrió xampp : **http://localhost:80/Redirect-Form-PHP-Tismart-main/** y realizar una compra de prueba.
+### Abrir el navegador web
+Abrir la siguiente url en su navegador web (Chrome, Mozilla, Safari, etc) con el puerto 80 que abrió xampp : **http://localhost:80/Redirect-Form-PHP-Tismart-main/** y realizar una compra de prueba.
 
 ![Pasarela de pago](/images/captura3.png)
 
