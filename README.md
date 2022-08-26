@@ -21,7 +21,7 @@ Descomprir el proyecto en la carpeta htdos en la ruta de instalación de Xampp: 
 ![proyecto en xampp](/images/captura1.png)
 
 ## 4-Abrir la aplicación XAMPP Control Panel 
- Abrir la aplicación instalada de Xapp y ejecutar el botón **Start** con el servicio web de **Apache**, quedando de la siguiente manera:
+ Abrir la aplicación instalada de Xampp y ejecutar el botón **Start** del modulo de **Apache**, quedando de la siguiente manera:
 
 ![Xampp control panel](/images/captura2.png)
 
@@ -31,7 +31,7 @@ Abrir la siguiente url en su navegador web (Chrome, Mozilla, Safari, etc) con el
 ![Pasarela de pago](/images/captura3.png)
 
 ### Error: **PaymentFormError = 02 vads_side_id**  
- Este error saldrá porque no se tiene configurado las credenciales de integración en el archivo ./example.configKey.php .  
+ Este error saldrá porque no se tiene configurado las credenciales de integración en el archivo **./example.configKey.php** .  
  Estas mismas credenciales se encuentran en su [Back Office Vendedor de Izipay](https://secure.micuentaweb.pe/vads-merchant/) en la siguiente ruta: **Configuracion - Tienda - Claves**  
  Más información [aquí](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/identificarse-durante-los-intercambios.html).  
  
