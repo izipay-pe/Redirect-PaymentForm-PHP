@@ -1,6 +1,8 @@
 # Redirect-Form-Izipay in PHP
 
-Visite la documentación para más información aquí:[Documentación](https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html)
+Este es un ejemplo de un carrito de compras con la pasarela de pago de Izipay utilizando el formulario de pago en redirección.  
+Visite la documentación para más información aquí: [Documentación Izipay](https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html)
+
 
 ## 1.-Instalar el programa XAMPP que incluye PHP 8.0 en adelante.
 
@@ -25,19 +27,19 @@ Descomprir el proyecto en la carpeta htdos en la ruta de instalación de Xampp: 
 
 ![Xampp control panel](/images/captura2.png)
 
-### Abrir el navegador web
+## 5.-Abrir el navegador web
 Abrir la siguiente url en su navegador web (Chrome, Mozilla, Safari, etc) con el puerto 80 que abrió xampp : **http://localhost:80/Redirect-Form-PHP-Tismart-main/** y realizar una compra de prueba.
 
 ![Pasarela de pago](/images/captura3.png)
 
-### Error: **PaymentFormError = 02 vads_side_id**  
+## 6.-Error: **PaymentFormError = 02 vads_side_id**  
  Este error saldrá porque no se tiene configurado las credenciales de integración en el archivo **./example.configKey.php** .  
  Estas mismas credenciales se encuentran en su [Back Office Vendedor de Izipay](https://secure.micuentaweb.pe/vads-merchant/) en la siguiente ruta: **Configuracion - Tienda - Claves**  
  Más información [aquí](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/identificarse-durante-los-intercambios.html).  
  
 ![error en pasarela](/images/captura%20error.png)
 
-## Configurar el identificador de su tienda y la clave:
+## 7.-Configurar el identificador de su tienda y la clave:
 Obtener las credenciales de su Back Office Vendedor y copiarlas en las variales correspondientes en el archivo: `example.configKey.php ` 
 
 ```sh
@@ -50,3 +52,5 @@ $_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
 //URL del servidor de Izipay
 $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
 ``` 
+
+## 8.-
