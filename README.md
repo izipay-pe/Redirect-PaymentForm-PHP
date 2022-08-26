@@ -8,7 +8,8 @@ Visite la documentación para más información aquí:[Documentación](https://s
 Install XAMPP https://www.apachefriends.org/
 ``` 
 
-## 2.-Descargar el proyecto ingresado a la url https://github.com/izipay-pe/Redirect-Form-PHP-Tismart/archive/refs/heads/main.zip  o clonarlo con git
+## 2.-Descargar 
+    Descargar el proyecto .zip ingresado [aquí](https://github.com/izipay-pe/Redirect-Form-PHP-Tismart/archive/refs/heads/main.zip) ó clonarlo con git  
 ```sh
 git clone https://github.com/izipay-pe/Redirect-Form-PHP-Tismart.git
 ``` 
