@@ -34,9 +34,7 @@ git clone https://github.com/izipay-pe/Redirect-Form-PHP-Tismart.git
 ![error en pasarela](/images/captura%20error.png)
 
 ## Configurar el identificador de su tienda y la clave:
-Obtener las credenciales de su Back Office Vendedor y copiarlas en las variales correspondientes en el archivo: `example.configKey.php  ` 
-
-![claves back office](/images/captura4.png)
+Obtener las credenciales de su Back Office Vendedor y copiarlas en las variales correspondientes en el archivo: `example.configKey.php ` 
 
 ```sh
 //Identificador de su tienda
