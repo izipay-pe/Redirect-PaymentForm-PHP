@@ -53,7 +53,7 @@ $_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
 $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
 ``` 
 
-## 8.- Soporte soporteecommerce@izipay.pe
+## 8.- Soporteecommerce@izipay.pe
 Para más información comunicarse al correo del equipo de soporte de Izipay
 Asunto: Mensaje + RUC + codigo de comercio / Razon Social.
 
