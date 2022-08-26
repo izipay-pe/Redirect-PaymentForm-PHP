@@ -31,10 +31,12 @@ git clone https://github.com/izipay-pe/Redirect-Form-PHP-Tismart.git
  Estas mismas credenciales se encuentran en su [Back Office Vendedor de Izipay](https://secure.micuentaweb.pe/vads-merchant/) en la siguiente ruta: **Configuracion - Tienda - Claves**  
  Más información [aquí](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/identificarse-durante-los-intercambios.html).  
  
-![proyecto en xampp](/images/captura4.png.png)
+![error en pasarela](/images/captura%20error.png)
 
 ## Configurar el identificador de su tienda y la clave:
 Obtener las credenciales de su Back Office Vendedor y copiarlas en las variales correspondientes en el archivo: `example.configKey.php  ` 
+
+![claves back office](/images/captura4.png)
 
 ```sh
 //Identificador de su tienda
