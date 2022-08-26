@@ -2,31 +2,33 @@
 
 Visite la documentación para más información aquí:[Documentación](https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html)
 
-## Instalar el programa XAMPP que incluye PHP 8.0 en adelante.
+## 1.-Instalar el programa XAMPP que incluye PHP 8.0 en adelante.
 
 ```sh
 Install XAMPP https://www.apachefriends.org/
 ``` 
 
-## Descargar el proyecto ingresado a la url https://github.com/izipay-pe/Redirect-Form-PHP-Tismart/archive/refs/heads/main.zip  o clonarlo con git
+## 2.-Descargar el proyecto ingresado a la url https://github.com/izipay-pe/Redirect-Form-PHP-Tismart/archive/refs/heads/main.zip  o clonarlo con git
 ```sh
 git clone https://github.com/izipay-pe/Redirect-Form-PHP-Tismart.git
 ``` 
 
-## 1.-XAMPP
-### Mover el proyecto y descomprimirlo en la carpeta htdocs de XAMPP quedando de esta manera:
+## 3.-Mover el proyecto y descomprimirlo en la carpeta htdocs 
+Descomprir el proyecto en la carpeta htdos en la ruta de instalación de Xampp: `C:\xampp\htdocs`
 
 ![proyecto en xampp](/images/captura1.png)
 
-### Abrir la aplicación XAMPP Control Panel y ejecutar el botón **start** el servicio web de **Apache** quedando de la siguiente manera:
+## 4-Abrir la aplicación XAMPP Control Panel 
+ Abrir la aplicación instalada de Xapp y ejecutar el botón **Start** con el servicio web de **Apache**, quedando de la siguiente manera:
 
 ![Xampp control panel](/images/captura2.png)
 
-### Abrir el su navegar la siguiente url: **http://localhost:80/Redirect-Form-PHP-Tismart-main/** y realizar una compra de prueba.
+### Abrir en el navegar: http://localhost/Redirect-Form-PHP-Tismart-main/
+Abrir la siguiente url en su navegador con el puerto 80 que abrió xampp : **http://localhost:80/Redirect-Form-PHP-Tismart-main/** y realizar una compra de prueba.
 
 ![Pasarela de pago](/images/captura3.png)
 
-### Te saldrá este error: **PaymentFormError = 02 vads_side_id**  
+### Error: **PaymentFormError = 02 vads_side_id**  
  Este error saldrá porque no se tiene configurado las credenciales de integración en el archivo ./example.configKey.php .  
  Estas mismas credenciales se encuentran en su [Back Office Vendedor de Izipay](https://secure.micuentaweb.pe/vads-merchant/) en la siguiente ruta: **Configuracion - Tienda - Claves**  
  Más información [aquí](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/identificarse-durante-los-intercambios.html).  
