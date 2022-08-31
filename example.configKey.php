@@ -1,12 +1,21 @@
 <?php
 //Identificador de su tienda
-$_SHOP_ID = "XXXXXXXXXXXX"; 
+$_SHOP_ID = "11111111"; 
 
 //Clave de TEST O PRODUCCIÖN de su tienda.
-$_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
+$_TEST_KEY = "2222222222222222";
+$_PROD_KEY = "3333333333333333";
 
 //URL del servidor de Izipay
 $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
+
+//Modo de configuración
+$_MODE = "TEST";
+
+/**------------------------------------------------------------- */
+// Verificar Modo
+if($_MODE=="TEST") $_KEY = $_TEST_KEY;
+if($_MODE=="PROD") $_KEY = $_PROD_KEY;
 
 //FUNCION para obtener el signature
 function getSignature($params, $keys)

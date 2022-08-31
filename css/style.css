@@ -239,3 +239,17 @@ body{
     margin-right: 30px;
     width: 300px;
 }
+
+.content-respuesta{
+    width: 100%;
+}
+.content-respuesta h4{
+    margin-bottom: 10px;
+}
+.content-respuesta .respuesta{
+    box-shadow: 0 8px 16px #ccc;
+    color: var(--red-izi);
+    padding: 10px;
+    text-align: start;
+
+}

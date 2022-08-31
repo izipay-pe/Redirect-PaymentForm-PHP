@@ -1,29 +1,31 @@
 <?php
-require_once "configKey.php";
+require_once "example.configKey.php";
 session_start();
 date_default_timezone_set("UTC");
+
 $datos = array(
   "vads_action_mode" => "INTERACTIVE",
   "vads_amount" => $_POST["amount"]*100,
-  "vads_ctx_mode" => "TEST",
+  "vads_ctx_mode" => $_MODE,
   "vads_currency" => "604", // Moneda PEN
   "vads_cust_email" => $_POST["email"],
   "vads_page_action" => "PAYMENT",
   "vads_payment_config" => "SINGLE",
   "vads_site_id" => $_SHOP_ID, //id de tienda  8910212
-  "vads_url_success" => "http://localhost/izipay/resultado.php",
+  // "vads_url_success" => "http://localhost/000webhost/Redirect-form-php/pagoFinalizado.php",
+  "vads_url_success" => "http://localhost:8080/pagoFinalizado.php",
+  "vads_return_mode"=> "POST",
   "vads_trans_date" => date("YmdHis"), //Fecha en formato UTC
   "vads_trans_id" =>  substr(md5(time()), -6),      //"af491z",
   "vads_version" => "V2",
-  "vads_payment_cards" => "VISA;MASTERCARD;AMEX;DINNERS", //Forzar el tipo de tarjeta
   "vads_order_id" => uniqid("MyOrderId"),
+  "vads_redirect_success_timeout" => 5//Definir tiempo de redirección
 );
 
 $signature = getSignature($datos, $_KEY);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,10 +69,10 @@ $signature = getSignature($datos, $_KEY);
                 <input type="hidden" name="vads_trans_date" value="<?php echo $datos["vads_trans_date"] ?>" />
                 <input type="hidden" name="vads_trans_id" value="<?php echo $datos["vads_trans_id"] ?>" />
                 <input type="hidden" name="vads_version" value="<?php echo $datos["vads_version"] ?>" />
-                <input type="hidden" name="vads_payment_cards" value="<?php echo $datos["vads_payment_cards"] ?>" />
                 <input type="hidden" name="vads_order_id" value="<?php echo $datos["vads_order_id"] ?>" />
                 <input type="hidden" name="vads_url_success" value="<?php echo $datos["vads_url_success"] ?>" />
-          
+                <input type="hidden" name="vads_return_mode" value="<?php echo $datos["vads_return_mode"] ?>" />
+                <input type="hidden" name="vads_redirect_success_timeout" value="<?php echo $datos["vads_redirect_success_timeout"] ?>" />
                 <input type="hidden" name="signature" value="<?= $signature ?>" />
                 <button  type="submit" name="pagar">Confirmar</button>
             </form>
