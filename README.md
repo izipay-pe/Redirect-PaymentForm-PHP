@@ -67,8 +67,6 @@ El formulario de pago está listo, puede intentar realizar una transacción util
 
   ![tarjeta](https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net/blob/main/images/tarjetas2.png)
 
-Para obtener más información, eche un vistazo a:
-
 ## 10.- Soporteecommerce@izipay.pe
 Para más información comunicarse al correo del equipo de soporte de Izipay.  
 **Asunto**: Mensaje + RUC + codigo de comercio / Razon Social.
