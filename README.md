@@ -10,15 +10,16 @@ Visite la documentación para más información aquí: [Documentación Izipay](h
 ## Requisitos Previos.
 
 * Extraer claves de autentificación. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
+* Descargar el manual desde [Manual Izipay - implementación en REDIRECCIÓN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/sitemap.html)
 * Instalar XAMPP [Aquí](https://www.apachefriends.org/es/index.html)
 * PHP 7.0 o supior
 * Servidor Web
 
 ## 1.- Crear el proyecto 
-Descargar el proyecto .zip ingresado [aquí](https://github.com/izipay-pe/Redirect-Payment-Form-PHP/archive/refs/heads/main.zip) ó clonarlo con git
+Descargar el proyecto .zip ingresado [aquí](https://github.com/izipay-pe/Redirect-PaymentFormT1-PHP/archive/refs/heads/main.zip) ó clonarlo con git
 
 ```sh
-git clone https://github.com/izipay-pe/Redirect-Payment-Form-PHP.git
+git clone https://github.com/izipay-pe/Redirect-PaymentFormT1-PHP.git
 ``` 
 
 * Paso 1.- Mover el proyecto y descomprimirlo en la carpeta htdocs en la ruta de instalación de Xampp: `C:\xampp\htdocs`
@@ -29,7 +30,7 @@ git clone https://github.com/izipay-pe/Redirect-Payment-Form-PHP.git
 
   ![Xampp control panel](/images/captura2.png)
 
-* Paso 3.- Abrir el navegador web (Chrome, Mozilla, Safari, etc): **http://localhost:80/Redirect-Payment-Form-PHP/** y realizar una compra de prueba.
+* Paso 3.- Abrir el navegador web (Chrome, Mozilla, Safari, etc): **http://localhost:80/Redirect-PaymentFormT1-PHP/** y realizar una compra de prueba.
 
   ![Pasarela de pago](/images/captura3.png)
 
