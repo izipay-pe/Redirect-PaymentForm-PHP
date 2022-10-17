@@ -11,6 +11,8 @@ Visite la documentación para más información aquí: [Documentación Izipay](h
 
 * Extraer claves de autentificación. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
 * Instalar XAMPP [Aquí](https://www.apachefriends.org/es/index.html)
+* PHP 7.0 o supior
+* Servidor Web
 
 ## 1.- Crear el proyecto 
 Descargar el proyecto .zip ingresado [aquí](https://github.com/izipay-pe/Redirect-Payment-Form-PHP/archive/refs/heads/main.zip) ó clonarlo con git
@@ -37,7 +39,37 @@ git clone https://github.com/izipay-pe/Redirect-Payment-Form-PHP.git
  
   ![error en pasarela](/images/captura%20error.png)
 
-## 2.- Configurar el identificador de su tienda y la clave:
+## 2.- Subirlo al servidor web
+Para este ejemplo se utilizó el servidor gratuito de [000webhost](https://www.000webhost.com/), ingrese a su cuenta de [000webhost](https://www.000webhost.com/) y siga los siguientes pasos.
+
+* **Paso 1:** Crearse un nuevo sitio.
+
+  ![Crear nuevo sitio](images/crear-nuevo-sitio.png)
+
+* **Paso 2:** Crear una URL pública y generar una contraseña de acceso a su sitio.
+
+  ![Nuevo sitio](images/nuevo-sitio.png)  
+
+* **Paso 3:** Seleccionar File Manager para subir el proyecto.  
+
+    ![File Manager](images/file-manager.png)
+
+* **Paso 4:** Seleccionar la carpeta `public_html` y subir los archivos del proyecto .zip   
+
+  ```sh
+  index.php
+  Izipayontroller.php
+  checkout.php
+  paid.php
+  key.example.php
+  css/style.css
+  ```
+  ![Public Html](images/public-html.png)
+
+
+  Ver el resultado en: https://tusitio.000webhostapp.com   
+
+## 3.- Configurar el identificador de su tienda y la clave:
 Obtener las credenciales de su Back Office Vendedor, [ver requisitos previos](#requisitos-previos), y copiarlas en las variales correspondientes en el archivo: `example.configKey.php ` 
 
 ```sh
@@ -51,13 +83,13 @@ $_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
 $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
 ``` 
 
-## 3.- Tranascción de prueba
+## 4.- Tranascción de prueba
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
 **Número de tarjeta**: 4970100000000055   
 **Fecha de vencimiento**: 12/30   
 **Código de seguridad**: 123
 
-## 4.- Configurar la respuesta del pago por IPN (Instant Payment Notification)
+## 5.- Configurar la respuesta del pago por IPN (Instant Payment Notification)
 Configurar la URL de notificación al final del pago para que su servidor web esté al tanto de la información del estado de pago de la transacción. Vea la documentación para más información. Aquí [IPN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/implementar-la-ipn.html)
 
 * Ver manual de implementacion de la IPN [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
@@ -68,7 +100,6 @@ Configurar la URL de notificación al final del pago para que su servidor web es
 
   ![URL de notificacion](/images/capturaIPN.png)
 
-## 5.- Soporteecommerce@izipay.pe
-Para más información comunicarse al correo del equipo de soporte de Izipay.  
-**Asunto**: Mensaje + RUC + codigo de comercio / Razon Social.
+## 6.- Ejemplo del formulario
 
+Ejemplo desplegado en un servidor web. Aquí (Por el momento está en mantenimiento).
