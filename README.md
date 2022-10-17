@@ -50,7 +50,14 @@ $_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
 //URL del servidor de Izipay
 $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
 ``` 
-## 3.- Configurar la respuesta del pago por IPN (Instant Payment Notification)
+
+## 3.- Tranascción de prueba
+El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
+**Número de tarjeta**: 4970100000000055   
+**Fecha de vencimiento**: 12/30   
+**Código de seguridad**: 123
+
+## 4.- Configurar la respuesta del pago por IPN (Instant Payment Notification)
 Configurar la URL de notificación al final del pago para que su servidor web esté al tanto de la información del estado de pago de la transacción. Vea la documentación para más información. Aquí [IPN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/implementar-la-ipn.html)
 
 * Ver manual de implementacion de la IPN [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
@@ -60,11 +67,6 @@ Configurar la URL de notificación al final del pago para que su servidor web es
 * Ver el ejemplo de la respuesta IPN con NODE.JS [Aquí](https://github.com/izipay-pe/Response-PaymentFormT1-Ipn)
 
   ![URL de notificacion](/images/capturaIPN.png)
-
-## 4.- Tranascción de prueba
-El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
-
-  ![tarjeta](https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net/blob/main/images/tarjetas2.png)
 
 ## 5.- Soporteecommerce@izipay.pe
 Para más información comunicarse al correo del equipo de soporte de Izipay.  
