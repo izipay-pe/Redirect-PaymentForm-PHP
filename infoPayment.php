@@ -1,5 +1,5 @@
 <?php
-require_once "example.configKey.php";
+require_once "configKey.php";
 session_start();
 date_default_timezone_set("UTC");
 

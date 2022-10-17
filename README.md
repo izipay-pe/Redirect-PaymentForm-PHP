@@ -3,14 +3,13 @@
 Este es un ejemplo de un carrito de compras con la pasarela de pago de Izipay utilizando el formulario de pago en redirección.  
 Visite la documentación para más información aquí: [Documentación Izipay](https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html)
 
+![demo](https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net/blob/main/images/demofinal2.png)
 
-## 1.-Instalar el programa XAMPP que incluye PHP 8.0 en adelante.
+## Requisitos Previos.
 
-```sh
-Install XAMPP https://www.apachefriends.org/
-``` 
+* Instalar XAMPP [Aquí](https://www.apachefriends.org/es/index.html)
 
-## 2.-Descargar 
+## 1.-Crear el proyecto 
 Descargar el proyecto .zip ingresado [aquí](https://github.com/izipay-pe/Redirect-Payment-Form-PHP/archive/refs/heads/main.zip) ó clonarlo con git
 
 ```sh
