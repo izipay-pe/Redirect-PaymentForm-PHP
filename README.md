@@ -97,8 +97,6 @@ Configurar la URL de notificación al final del pago para que su servidor web es
 
 * Ver el ejemplo de la respuesta IPN con NODE.JS [Aquí](https://github.com/izipay-pe/Response-PaymentFormT1-Ipn)
 
-  ![URL de notificacion](/images/capturaIPN.png)
-
 ## 6.- Ejemplo del formulario
 
 Ejemplo desplegado en un servidor web. Aquí (Por el momento está en mantenimiento).
