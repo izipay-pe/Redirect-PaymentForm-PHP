@@ -68,7 +68,7 @@ Para este ejemplo se utilizó el servidor gratuito de [000webhost](https://www.0
 
   Ver el resultado en: https://tusitio.000webhostapp.com   
 
-## 3.- Configurar el identificador de su tienda y la clave:
+## 3.- Configurar datos de conexión:
 Obtener las credenciales de su Back Office Vendedor, [ver requisitos previos](#requisitos-previos), y copiarlas en las variales correspondientes en el archivo: `example.configKey.php ` 
 
 ```sh
