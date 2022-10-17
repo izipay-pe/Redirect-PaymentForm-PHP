@@ -44,27 +44,26 @@ Para este ejemplo se utilizó el servidor gratuito de [000webhost](https://www.0
 
 * **Paso 1:** Crearse un nuevo sitio.
 
-  ![Crear nuevo sitio](images/crear-nuevo-sitio.png)
+  ![Crear nuevo sitio](https://github.com/izipay-pe/Embedded-PaymentFormT1-Php/blob/main/images/crear-nuevo-sitio.png)
 
 * **Paso 2:** Crear una URL pública y generar una contraseña de acceso a su sitio.
 
-  ![Nuevo sitio](images/nuevo-sitio.png)  
+  ![Nuevo sitio](https://github.com/izipay-pe/Embedded-PaymentFormT1-Php/blob/main/images/nuevo-sitio.png)  
 
 * **Paso 3:** Seleccionar File Manager para subir el proyecto.  
 
-    ![File Manager](images/file-manager.png)
+    ![File Manager](https://github.com/izipay-pe/Embedded-PaymentFormT1-Php/blob/main/images/file-manager.png)
 
 * **Paso 4:** Seleccionar la carpeta `public_html` y subir los archivos del proyecto .zip   
 
   ```sh
   index.php
-  Izipayontroller.php
-  checkout.php
-  paid.php
-  key.example.php
+  infoPayment.php
+  pagoFinalizado.php
+  example.configKey.php
   css/style.css
   ```
-  ![Public Html](images/public-html.png)
+  ![Public Html](https://github.com/izipay-pe/Embedded-PaymentFormT1-Php/blob/main/images/public-html.png)
 
 
   Ver el resultado en: https://tusitio.000webhostapp.com   
