@@ -65,7 +65,7 @@ Configurar la URL de notificación al final del pago para que su servidor web es
 ## 9.- Tranascción de prueba
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
 
-  ![tarjeta](images/tarjetas2.png)
+  ![tarjeta](https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net/blob/main/images/tarjetas2.png)
 
 Para obtener más información, eche un vistazo a:
 
