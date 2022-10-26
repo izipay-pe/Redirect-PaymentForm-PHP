@@ -33,7 +33,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentFormT1-PHP.git
 
   ![Pasarela de pago](/images/captura3.png)
 
-* Error: **PaymentFormError = 02 vads_side_id**, este error saldrá porque no se tiene configurado las credenciales de integración en el archivo **./example.configKey.php** .  
+* **Error: PaymentFormError = 02 vads_side_id**, este error saldrá porque no se tiene configurado las credenciales de integración en el archivo **./example.configKey.php** .  
  Estas mismas credenciales se encuentran en su [Back Office Vendedor de Izipay](https://secure.micuentaweb.pe/vads-merchant/) en la siguiente ruta: **Configuracion - Tienda - Claves**  
  Más información [Ver requisitos previos](#Requisitos_Previos).
  
@@ -68,27 +68,27 @@ Para este ejemplo se utilizó el servidor gratuito de [000webhost](https://www.0
 
   Ver el resultado en: https://tusitio.000webhostapp.com   
 
-## 3.- Configurar datos de conexión:
-Obtener las credenciales de su Back Office Vendedor, [ver requisitos previos](#requisitos-previos), y copiarlas en las variales correspondientes en el archivo: `example.configKey.php ` 
+* **Paso 5: Configurar datos de conexión**
+  Obtener las credenciales de su Back Office Vendedor, [ver requisitos previos](#requisitos-previos), y copiarlas en las variales correspondientes en el archivo: `example.configKey.php ` 
 
-```sh
-//Identificador de su tienda
-$_SHOP_ID = "XXXXXXXXXXXX"; 
+  ```sh
+  //Identificador de su tienda
+  $_SHOP_ID = "XXXXXXXXXXXX"; 
 
-//Clave de TEST O PRODUCCIÖN de su tienda.
-$_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
+  //Clave de TEST O PRODUCCIÖN de su tienda.
+  $_KEY = "XXXXXXXXXXXXXXXXXXXXXXX";
 
-//URL del servidor de Izipay
-$_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
-``` 
+  //URL del servidor de Izipay
+  $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
+  ``` 
 
-## 4.- Tranascción de prueba
+## 3.- Tranascción de prueba
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
 **Número de tarjeta**: 4970100000000055   
 **Fecha de vencimiento**: 12/30   
 **Código de seguridad**: 123
 
-## 5.- Configurar la respuesta del pago por IPN (Instant Payment Notification)
+## 4.- Implementar IPN
 Configurar la URL de notificación al final del pago para que su servidor web esté al tanto de la información del estado de pago de la transacción. Vea la documentación para más información. Aquí [IPN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/implementar-la-ipn.html)
 
 * Ver manual de implementacion de la IPN [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
@@ -97,6 +97,3 @@ Configurar la URL de notificación al final del pago para que su servidor web es
 
 * Ver el ejemplo de la respuesta IPN con NODE.JS [Aquí](https://github.com/izipay-pe/Response-PaymentFormT1-Ipn)
 
-## 6.- Ejemplo del formulario
-
-Ejemplo desplegado en un servidor web. Aquí (Por el momento está en mantenimiento).
