@@ -2,7 +2,7 @@
 
 Este es un ejemplo de un carrito de compras con la pasarela de pago de Izipay utilizando el formulario de pago en redirección.  
 
-![demo](https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net/blob/main/images/demofinal2.png)
+![formulario redirección](images/formulario-redireccion.png)
 
 <a name="Requisitos_Previos"></a>
 
