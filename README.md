@@ -29,7 +29,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-PHP.git
 
   ![Xampp control panel](/images/captura2.png)
 
-* Paso 3.- Abrir el navegador web (Chrome, Mozilla, Safari, etc): **http://localhost:80/Redirect-PaymentFormT1-PHP/** y realizar una compra de prueba.
+* Paso 3.- Abrir el navegador web (Chrome, Mozilla, Safari, etc): **http://localhost:80/Redirect-PaymentForm-PHP/** y realizar una compra de prueba.
 
   ![Pasarela de pago](/images/captura3.png)
 
