@@ -84,7 +84,7 @@ Para este ejemplo se utilizó el servidor gratuito de [000webhost](https://www.0
   $_URL_IZIPAY = "https://secure.micuentaweb.pe/vads-payment/";
   ``` 
 
-## 3.- Tranascción de prueba
+## 3.- Transacción de prueba
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
 * **Tarjeta de prueba VISA:**  
   * Número de tarjeta: 4970100000000055   
