@@ -4,6 +4,8 @@
 
 ![formulario redirección](images/formulario-redireccion.png)
 
+## Este ejemplo es solo una guía para poder realizar la integración de la pasarela de pagos, puede realizar las modificaciones necesarias para su proyecto.
+
 <a name="Requisitos_Previos"></a>
 
 ## Requisitos Previos.
